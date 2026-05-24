@@ -9,6 +9,30 @@ This project solves that practical gap:
 
 In short: not just "what is the answer," but "should I spend time double-checking this?"
 
+## Confidence, built into the chat experience
+Every answer ships with a calibrated confidence score and a plain-language verdict, so the accountant immediately knows whether to trust it or open the source.
+
+![Chat UI showing an answer alongside its confidence score and source citations.](readme_images/chat_experience.png)
+
+The score is not the model's self-reported certainty (those are notoriously miscalibrated). It is produced by a separate classifier that inspects *how* the retrieval went — not what the LLM said about it.
+
+## The retrieval fingerprint — our golden ticket
+Every retrieval leaves a unique fingerprint: the shape of the similarity distribution, how tightly the top chunks cohere, whether legal anchors (statute numbers, rare tax terms, numeric thresholds) line up between question and context, whether dense and sparse retrievers agree on the same chunks. Correct answers and wrong answers leave *visibly different* fingerprints — and that signal lives entirely in the retrieval geometry, before the LLM even writes a word.
+
+![Learning architecture: retrieval produces a feature vector (the fingerprint), which a classifier maps to a calibrated confidence score.](readme_images/learning.png)
+
+We extract ~30 such features per question across five families — retrieval certainty, chunk cohesion, lexical anchor alignment, source/statute focus, and hybrid retriever agreement — and let a classifier learn which fingerprints predict PASS vs FAIL on the 83-question judged set. The result is a confidence head that is model-agnostic, cheap to compute, and works on top of any retriever you swap in.
+
+## Interpretable classifiers, not a black box
+We deliberately benchmark only models a tax expert can audit: a dummy-majority baseline, a shallow decision tree, and a regularized logistic regression. Each is trained with 5-fold stratified cross-validation; the best balanced-accuracy model wins. Because the features are human-readable (`top1_gap`, `rare_term_recall`, `max_statute_share`, …), the classifier's decision is fully explainable — you can read off *why* a given answer was flagged low-confidence.
+
+![Classifier comparison across retrieval methods, showing decision tree and logistic regression beating the dummy baseline.](readme_images/classifiers.png)
+
+## Results on the 83-question bank
+Across retrieval variants — baseline sliding-window, section-aware chunking, graph-enhanced, hybrid dense+BM25, and our final query-translated hybrid (`hybrid_section_v1_qfi`) — the fingerprint-based confidence head consistently separates correct from incorrect answers, while the underlying RAG accuracy climbs as retrieval improves.
+
+![Evaluation metrics across methods: judged correctness on the 83-question bank and confidence-classifier balanced accuracy.](readme_images/metrics.png)
+
 ## What we built
 The system has two outputs per question:
 1. RAG answer from legal/tax source context.
