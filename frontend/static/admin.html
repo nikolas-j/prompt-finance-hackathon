@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxxa - Model details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">&#x2731;</span>
+      <span class="brand-name">Taxxa</span>
+    </div>
+    <nav class="topbar-nav">
+      <a class="nav-link" tabindex="-1">Pricing</a>
+      <a class="nav-link" tabindex="-1">Features</a>
+      <a class="nav-link" tabindex="-1">Blog</a>
+      <a class="nav-link" href="/learn">How it learns</a>
+      <a class="nav-link" href="/roadmap">Next steps</a>
+      <a class="nav-link" href="/">&larr; Chat</a>
+      <span class="nav-btn nav-btn-ghost" tabindex="-1">Login to app</span>
+      <span class="nav-btn nav-btn-primary" tabindex="-1">Register</span>
+      <span class="nav-lang" tabindex="-1">EN</span>
+    </nav>
+  </header>
+
+  <main class="admin">
+    <section class="admin-head">
+      <div>
+        <span class="hero-pill">Internal evaluation &middot; expert-written bank</span>
+        <h1 class="admin-title">How the system performs &amp; why</h1>
+        <p class="admin-sub">
+          Each retrieval method is scored on the same expert-written
+          tax-question bank. On top of that, a small classifier learns
+          to spot when an answer might be missing a detail - so the
+          chat can show a useful &ldquo;looks complete&rdquo; or
+          &ldquo;worth a closer look&rdquo; signal.
+        </p>
+      </div>
+    </section>
+
+    <!-- Test-set summary (always shown, identical across tabs) -->
+    <section class="card card-headline" id="card-summary">
+      <span class="loading">loading test-set summary...</span>
+    </section>
+
+    <!-- One tab per trained method. admin.js fills this from /api/methods. -->
+    <div class="tabbar tabbar-scrollable" id="tabbar"></div>
+
+    <!-- Headline (per-model calibration) -->
+    <section class="card card-cal" id="card-headline">
+      <span class="loading">loading classifier...</span>
+    </section>
+
+    <!-- Model transparency -->
+    <section class="card" id="card-models"></section>
+
+    <!-- Confusion matrix -->
+    <section class="card" id="card-confusion"></section>
+
+    <!-- Importances or coefficients -->
+    <section class="card" id="card-importance"></section>
+
+    <!-- All trained features (names only) -->
+    <section class="card" id="card-features"></section>
+
+    <!-- Tree SVG OR logreg decision rule -->
+    <section class="card" id="card-tree"></section>
+
+    <!-- Per-query probe -->
+    <section class="card" id="card-probe">
+      <div class="card-head">
+        <h2 class="card-title">Try it on a real question</h2>
+        <p class="card-sub">
+          Type a question. You'll see the model's completeness score
+          and the features that pushed it there.
+        </p>
+      </div>
+      <form id="probe-form" class="probe-form">
+        <textarea id="probe-input" class="composer-input probe-input" rows="2"
+                  placeholder="e.g. What withholding rate applies to a foreign specialist (avainhenkilo)?"></textarea>
+        <button id="probe-send" type="submit" class="composer-send">Run &rarr;</button>
+      </form>
+      <div id="probe-result" class="probe-result"></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

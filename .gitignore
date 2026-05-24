@@ -1,0 +1,27 @@
+# Environment
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Data — fetch with scripts/fetch_data.py, don't commit
+data/raw/
+data/processed/
+data/graph/
+
+# Local artifacts (vector indexes, dbs, run outputs)
+*.faiss
+*.index
+*.duckdb
+*.sqlite
+runs/
+
+data/chunks_baseline.json
+data/chunks_section_v1.json
+
+data/embeddings_baseline.bin
+data/embeddings_section_v1.bin
+
+data/*.bin
+data/*.pkl

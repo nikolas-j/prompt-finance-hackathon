@@ -1,0 +1,1582 @@
+{
+  "method": "hybrid_section_v1_qfi",
+  "n_samples": 83,
+  "n_pass": 27,
+  "n_fail": 56,
+  "baseline_accuracy": 0.6746987951807228,
+  "cv_n_splits": 5,
+  "feature_names": [
+    "top1_similarity",
+    "top1_gap",
+    "top1_dominance",
+    "std_similarity",
+    "sim_decay_slope",
+    "softmax_entropy_norm",
+    "top3_similarity_mass",
+    "sim_gini",
+    "chunk_cohesion",
+    "centroid_concentration",
+    "max_pairwise_distance",
+    "max_statute_share",
+    "statute_switch_rate",
+    "n_unique_files",
+    "frac_section_number_present",
+    "total_context_chars",
+    "question_token_count",
+    "n_numbers",
+    "n_conditionals",
+    "has_statute_ref",
+    "has_year",
+    "numeric_question",
+    "numeric_hit_coverage",
+    "numeric_overlap_ratio",
+    "statute_ref_alignment",
+    "confidence_x_focus",
+    "title_token_jaccard_top1",
+    "title_token_jaccard_topk",
+    "title_token_coverage_topk",
+    "body_content_overlap_top1",
+    "body_content_overlap_topk",
+    "rare_term_recall",
+    "near_dup_share",
+    "statute_diversity_norm",
+    "superseded_share",
+    "has_multipart_question",
+    "question_char_count",
+    "has_currency_amount",
+    "n_question_marks",
+    "graph_is_graph_mode",
+    "graph_seed_share_in_final",
+    "graph_neighbour_share_in_final",
+    "graph_mean_distance",
+    "graph_max_distance",
+    "graph_top1_is_neighbour",
+    "graph_top1_distance",
+    "graph_unique_seeds_used",
+    "graph_neighbour_sim_uplift",
+    "graph_neighbour_sim_share",
+    "bm25_top1_score",
+    "bm25_score_gap",
+    "bm25_score_mean_topk",
+    "rrf_top1_score",
+    "rrf_top1_gap",
+    "frac_both_in_topk",
+    "frac_bm25_only_in_topk",
+    "frac_dense_only_in_topk",
+    "top1_in_dense_pool",
+    "top1_in_bm25_pool",
+    "top1_both_retrievers",
+    "bm25_rank_mean_topk",
+    "dense_rank_mean_topk",
+    "query_num_in_top1_chunk"
+  ],
+  "best_model": "logreg_l2",
+  "models": [
+    {
+      "name": "logreg_l2",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 10.0,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.556060606060606,
+      "cv_mean_accuracy": 0.6036764705882354,
+      "cv_std_accuracy": 0.06386485514884843,
+      "cv_mean_balanced_accuracy": 0.556060606060606,
+      "cv_std_balanced_accuracy": 0.06521842934455567,
+      "cv_mean_f1": 0.40888888888888886,
+      "cv_std_f1": 0.11097769768163353,
+      "cv_improvement_over_baseline": -0.07102232459248747,
+      "feature_importances": [
+        {
+          "name": "sim_decay_slope",
+          "importance": 3.407991057428288
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 3.257625891095548
+        },
+        {
+          "name": "superseded_share",
+          "importance": 2.9049468610578137
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 2.8577129402825046
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 2.3178836060551147
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 2.2861343057939245
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 2.2422252433240613
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 2.046835138159191
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 2.0430953128936307
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 1.9193159631933203
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 1.8368116271415187
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 1.814876363517687
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 1.8141977156094695
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 1.7985884781545418
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.7934495188275315
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 1.7349060595794605
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 1.6251984899278566
+        },
+        {
+          "name": "question_char_count",
+          "importance": 1.613331554872061
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 1.4719762717289442
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 1.4264435436811254
+        },
+        {
+          "name": "std_similarity",
+          "importance": 1.3768198658041344
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 1.369263561441551
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 1.3491171941508588
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 1.2520503991357446
+        },
+        {
+          "name": "numeric_question",
+          "importance": 1.177200963447322
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 1.094171919554653
+        },
+        {
+          "name": "has_year",
+          "importance": 1.069043126117323
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 1.0108902799531987
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.9850929859222837
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.9103722962240466
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.8281963612733284
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.8281963612733284
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.8062588865939978
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.7790889277413885
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.7062401135492796
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.6862927732128687
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.6668970168407081
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.6182262971718949
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.5970806636103656
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.5950829565712157
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.5230083212492783
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.472156936225342
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.4710807609216656
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.46597698665234943
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.4494037589269769
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.4494024898538215
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.4369189156393975
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.3885342736793594
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.3391754426118177
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.32529205432460734
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.32242996180072997
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.21351770379048363
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.14435722155288855
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 53,
+      "nonzero_features": [
+        {
+          "name": "sim_decay_slope",
+          "importance": 3.407991057428288
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 3.257625891095548
+        },
+        {
+          "name": "superseded_share",
+          "importance": 2.9049468610578137
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 2.8577129402825046
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 2.3178836060551147
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 2.2861343057939245
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 2.2422252433240613
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 2.046835138159191
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 2.0430953128936307
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 1.9193159631933203
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 1.8368116271415187
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 1.814876363517687
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 1.8141977156094695
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 1.7985884781545418
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.7934495188275315
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 1.7349060595794605
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 1.6251984899278566
+        },
+        {
+          "name": "question_char_count",
+          "importance": 1.613331554872061
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 1.4719762717289442
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 1.4264435436811254
+        },
+        {
+          "name": "std_similarity",
+          "importance": 1.3768198658041344
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 1.369263561441551
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 1.3491171941508588
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 1.2520503991357446
+        },
+        {
+          "name": "numeric_question",
+          "importance": 1.177200963447322
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 1.094171919554653
+        },
+        {
+          "name": "has_year",
+          "importance": 1.069043126117323
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 1.0108902799531987
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.9850929859222837
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.9103722962240466
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.8281963612733284
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.8281963612733284
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.8062588865939978
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.7790889277413885
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.7062401135492796
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.6862927732128687
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.6668970168407081
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.6182262971718949
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.5970806636103656
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.5950829565712157
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.5230083212492783
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.472156936225342
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.4710807609216656
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.46597698665234943
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.4494037589269769
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.4494024898538215
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.4369189156393975
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.3885342736793594
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.3391754426118177
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.32529205432460734
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.32242996180072997
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.21351770379048363
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.14435722155288855
+        }
+      ],
+      "tree_text": null
+    },
+    {
+      "name": "decision_tree",
+      "grid_size": 24,
+      "best_params": {
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "max_depth": 4,
+        "min_samples_leaf": 4
+      },
+      "grid_best_balanced_accuracy": 0.5377272727272727,
+      "cv_mean_accuracy": 0.5786764705882353,
+      "cv_std_accuracy": 0.07424650330214316,
+      "cv_mean_balanced_accuracy": 0.5377272727272727,
+      "cv_std_balanced_accuracy": 0.041450956782465444,
+      "cv_mean_f1": 0.3704761904761905,
+      "cv_std_f1": 0.07428571428571429,
+      "cv_improvement_over_baseline": -0.0960223245924875,
+      "feature_importances": [
+        {
+          "name": "total_context_chars",
+          "importance": 0.19457999913629484
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.19415432375754435
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.19221417981832783
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.13930875127965608
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.12996386266102972
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.10161532688682037
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.04816355646032684
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 7,
+      "nonzero_features": [
+        {
+          "name": "total_context_chars",
+          "importance": 0.19457999913629484
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.19415432375754435
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.19221417981832783
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.13930875127965608
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.12996386266102972
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.10161532688682037
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.04816355646032684
+        }
+      ],
+      "tree_text": "|--- numeric_overlap_ratio <= 0.196\n|   |--- total_context_chars <= 10789.000\n|   |   |--- body_content_overlap_topk <= 0.232\n|   |   |   |--- class: 1\n|   |   |--- body_content_overlap_topk >  0.232\n|   |   |   |--- class: 0\n|   |--- total_context_chars >  10789.000\n|   |   |--- n_conditionals <= 0.500\n|   |   |   |--- bm25_top1_score <= 33.145\n|   |   |   |   |--- class: 1\n|   |   |   |--- bm25_top1_score >  33.145\n|   |   |   |   |--- class: 0\n|   |   |--- n_conditionals >  0.500\n|   |   |   |--- top1_gap <= 0.009\n|   |   |   |   |--- class: 1\n|   |   |   |--- top1_gap >  0.009\n|   |   |   |   |--- class: 1\n|--- numeric_overlap_ratio >  0.196\n|   |--- question_token_count <= 21.500\n|   |   |--- class: 1\n|   |--- question_token_count >  21.500\n|   |   |--- total_context_chars <= 10580.000\n|   |   |   |--- class: 0\n|   |   |--- total_context_chars >  10580.000\n|   |   |   |--- class: 0\n"
+    },
+    {
+      "name": "logreg_l1",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 10.0,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.5196969696969698,
+      "cv_mean_accuracy": 0.5558823529411765,
+      "cv_std_accuracy": 0.0994796148546339,
+      "cv_mean_balanced_accuracy": 0.5196969696969698,
+      "cv_std_balanced_accuracy": 0.10359914270468654,
+      "cv_mean_f1": 0.3798319327731092,
+      "cv_std_f1": 0.1573310336927893,
+      "cv_improvement_over_baseline": -0.11881644223954635,
+      "feature_importances": [
+        {
+          "name": "frac_both_in_topk",
+          "importance": 7.565433292447895
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 5.920539931710001
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 5.61640133766402
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 4.847713175757842
+        },
+        {
+          "name": "superseded_share",
+          "importance": 4.745287456383819
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 4.277445192741942
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 3.9271060127533532
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 3.776615444430264
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 3.632397853242372
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 3.5426413478635848
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 3.0720034346873875
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 3.0227486169486264
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 2.815002133873936
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 2.7103565704950237
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 2.348029420890549
+        },
+        {
+          "name": "top1_gap",
+          "importance": 2.2792502822074265
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 2.2521695634125423
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 2.2341127649214663
+        },
+        {
+          "name": "std_similarity",
+          "importance": 2.156298849209579
+        },
+        {
+          "name": "has_year",
+          "importance": 2.1111707958123653
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 1.953370940303647
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 1.7922900952535186
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 1.6299828476976825
+        },
+        {
+          "name": "question_char_count",
+          "importance": 1.5769115831465392
+        },
+        {
+          "name": "numeric_question",
+          "importance": 1.500636031859649
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 1.4606262752390098
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 1.2900563486466294
+        },
+        {
+          "name": "n_numbers",
+          "importance": 1.2722495826754072
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 1.2519769069472502
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 1.0259309133224639
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.9744042340544042
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.9415089658217569
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.9074865119349748
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.7749362749016603
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.6118878727788472
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.6068239077189658
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.542917887640532
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.49331358044630036
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.3848065891165067
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.2866500988257588
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.18107480714997098
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.08340756858367587
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.08289311503546475
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 43,
+      "nonzero_features": [
+        {
+          "name": "frac_both_in_topk",
+          "importance": 7.565433292447895
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 5.920539931710001
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 5.61640133766402
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 4.847713175757842
+        },
+        {
+          "name": "superseded_share",
+          "importance": 4.745287456383819
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 4.277445192741942
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 3.9271060127533532
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 3.776615444430264
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 3.632397853242372
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 3.5426413478635848
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 3.0720034346873875
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 3.0227486169486264
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 2.815002133873936
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 2.7103565704950237
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 2.348029420890549
+        },
+        {
+          "name": "top1_gap",
+          "importance": 2.2792502822074265
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 2.2521695634125423
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 2.2341127649214663
+        },
+        {
+          "name": "std_similarity",
+          "importance": 2.156298849209579
+        },
+        {
+          "name": "has_year",
+          "importance": 2.1111707958123653
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 1.953370940303647
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 1.7922900952535186
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 1.6299828476976825
+        },
+        {
+          "name": "question_char_count",
+          "importance": 1.5769115831465392
+        },
+        {
+          "name": "numeric_question",
+          "importance": 1.500636031859649
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 1.4606262752390098
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 1.2900563486466294
+        },
+        {
+          "name": "n_numbers",
+          "importance": 1.2722495826754072
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 1.2519769069472502
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 1.0259309133224639
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.9744042340544042
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.9415089658217569
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.9074865119349748
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.7749362749016603
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.6118878727788472
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.6068239077189658
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.542917887640532
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.49331358044630036
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.3848065891165067
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.2866500988257588
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.18107480714997098
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.08340756858367587
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.08289311503546475
+        }
+      ],
+      "tree_text": null
+    },
+    {
+      "name": "dummy_majority",
+      "grid_size": 1,
+      "best_params": {},
+      "grid_best_balanced_accuracy": null,
+      "cv_mean_accuracy": 0.675,
+      "cv_std_accuracy": 0.023780825924700336,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.000301204819277201,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxxa - How the model learns</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">&#x2731;</span>
+      <span class="brand-name">Taxxa</span>
+    </div>
+    <nav class="topbar-nav">
+      <a class="nav-link" tabindex="-1">Pricing</a>
+      <a class="nav-link" tabindex="-1">Features</a>
+      <a class="nav-link" tabindex="-1">Blog</a>
+      <a class="nav-link nav-link-active" href="/learn">How it learns</a>
+      <a class="nav-link" href="/admin">Model details</a>
+      <a class="nav-link" href="/roadmap">Next steps</a>
+      <a class="nav-link" href="/">&larr; Chat</a>
+      <span class="nav-btn nav-btn-ghost" tabindex="-1">Login to app</span>
+      <span class="nav-btn nav-btn-primary" tabindex="-1">Register</span>
+      <span class="nav-lang" tabindex="-1">EN</span>
+    </nav>
+  </header>
+
+  <main class="admin">
+    <section class="admin-head">
+      <div>
+        <span class="hero-pill">Training principles &middot; how the score is learned</span>
+        <h1 class="admin-title">The model learns the <span class="hero-accent">shape of retrieval</span></h1>
+        <p class="admin-sub">
+          For each question, retrieval leaves a fingerprint - which chunks
+          ranked highest, by how much, and how consistent they are. We
+          learned that this fingerprint alone is enough to predict whether
+          the LLM's answer will be complete - without re-reading the
+          answer or running another model.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pipeline diagram (SVG, server-independent) -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">The pipeline at a glance</h2>
+        <p class="card-sub">
+          The classifier sits on the <em>retrieval</em> step, not the
+          generation step. Same features the search engine already
+          computes - zero extra LLM calls.
+        </p>
+      </div>
+      <div class="pipeline-wrap">
+        <svg viewBox="0 0 960 320" class="pipeline-svg" xmlns="http://www.w3.org/2000/svg">
+          <!-- horizontal main flow -->
+          <g class="pipe-node">
+            <rect x="20" y="120" width="150" height="80" rx="12"/>
+            <text x="95" y="155" class="pipe-title">Question</text>
+            <text x="95" y="175" class="pipe-sub">user types a query</text>
+          </g>
+          <g class="pipe-node">
+            <rect x="200" y="120" width="150" height="80" rx="12"/>
+            <text x="275" y="155" class="pipe-title">Embed</text>
+            <text x="275" y="175" class="pipe-sub">text-embedding-3-small</text>
+          </g>
+          <g class="pipe-node accent">
+            <rect x="380" y="120" width="170" height="80" rx="12"/>
+            <text x="465" y="155" class="pipe-title">Retrieve top-k</text>
+            <text x="465" y="175" class="pipe-sub">cosine + (BM25 / graph)</text>
+          </g>
+          <g class="pipe-node">
+            <rect x="580" y="120" width="150" height="80" rx="12"/>
+            <text x="655" y="155" class="pipe-title">Generate</text>
+            <text x="655" y="175" class="pipe-sub">LLM drafts answer</text>
+          </g>
+          <g class="pipe-node">
+            <rect x="760" y="120" width="180" height="80" rx="12"/>
+            <text x="850" y="155" class="pipe-title">Answer + sources</text>
+            <text x="850" y="175" class="pipe-sub">shown to user</text>
+          </g>
+
+          <!-- forward arrows -->
+          <g class="pipe-arrow">
+            <path d="M 170 160 L 200 160"/>
+            <path d="M 350 160 L 380 160"/>
+            <path d="M 550 160 L 580 160"/>
+            <path d="M 730 160 L 760 160"/>
+          </g>
+
+          <!-- branch DOWN from "Retrieve top-k" into pathway/classifier -->
+          <g class="pipe-arrow branch">
+            <path d="M 465 200 L 465 240"/>
+          </g>
+          <g class="pipe-node branch-node">
+            <rect x="330" y="240" width="270" height="60" rx="10"/>
+            <text x="465" y="265" class="pipe-title">Pathway features</text>
+            <text x="465" y="285" class="pipe-sub">top-1 sim, gap, focus, § presence, ...</text>
+          </g>
+          <g class="pipe-arrow branch">
+            <path d="M 600 270 L 720 270"/>
+          </g>
+          <g class="pipe-node clf-node">
+            <rect x="720" y="240" width="200" height="60" rx="10"/>
+            <text x="820" y="265" class="pipe-title">Classifier</text>
+            <text x="820" y="285" class="pipe-sub">→ completeness score</text>
+          </g>
+
+          <!-- arrowhead def -->
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M 0 0 L 8 4 L 0 8 z" fill="#f25922"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <p class="card-sub" style="margin-top: 8px;">
+        Crucially, the classifier never sees the question text or the
+        answer text - only the <strong>numerical shape</strong> of
+        retrieval. That makes it cheap to run on every query and stable
+        across domains.
+      </p>
+    </section>
+
+    <!-- The three core ideas -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">Three ideas, in plain English</h2>
+      </div>
+      <div class="grid-3">
+        <div class="idea">
+          <div class="idea-num">1</div>
+          <div class="idea-title">Retrieval has a fingerprint</div>
+          <div class="idea-body">
+            When the right answer is in one clear chunk, the top hit
+            beats the rest by a wide margin and the chunks all reference
+            the same statute. When the answer is scattered or missing,
+            similarity scores flatten out and statute references jump
+            around.
+          </div>
+        </div>
+        <div class="idea">
+          <div class="idea-num">2</div>
+          <div class="idea-title">The fingerprint tracks completeness</div>
+          <div class="idea-body">
+            On our 83-question evaluation bank, the same fingerprint
+            shapes appear over and over: certain shapes predict a
+            complete answer, others predict a missing detail. A tiny
+            classifier learns the mapping in seconds.
+          </div>
+        </div>
+        <div class="idea">
+          <div class="idea-num">3</div>
+          <div class="idea-title">Cheap, honest, transferable</div>
+          <div class="idea-body">
+            No extra LLM call. No re-reading the answer. The same
+            features ship on every query, so the score is always
+            available - and the model can say &ldquo;may be
+            incomplete&rdquo; instead of confidently bluffing.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side-by-side example pathways -->
+    <section class="card" id="card-examples">
+      <div class="card-head">
+        <h2 class="card-title">Two questions, two pathways</h2>
+        <p class="card-sub">
+          Both questions are about <strong>lahjavero</strong> (gift tax).
+          The retrieval fingerprint - not the topic - is what changes
+          the score.
+        </p>
+      </div>
+      <div id="examples-content" class="loading">loading two real examples from the bank...</div>
+    </section>
+
+    <!-- The training bank -->
+    <section class="card" id="card-bank">
+      <div class="card-head">
+        <h2 class="card-title">Calibrated on 83 expert-written questions</h2>
+        <p class="card-sub">
+          The classifier is trained and validated on a hand-curated bank
+          covering basic-tier lookups all the way through multi-rule
+          scenarios. An LLM judge labels each answer PASS / FAIL fact by
+          fact; the labels drive 5-fold cross-validation.
+        </p>
+      </div>
+      <div id="bank-content" class="loading">loading test-bank summary...</div>
+    </section>
+
+    <!-- CTA -->
+    <section class="card card-cta">
+      <div>
+        <h2 class="card-title" style="margin-bottom: 4px;">See it live</h2>
+        <p class="card-sub">
+          Ask a question in the chat or open the admin page to inspect
+          the trained classifier feature-by-feature.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a class="nav-btn nav-btn-primary" href="/">Open the chat &rarr;</a>
+        <a class="nav-btn nav-btn-ghost"   href="/admin">Model details</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="/learn.js"></script>
+</body>
+</html>

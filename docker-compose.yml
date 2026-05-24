@@ -1,0 +1,41 @@
+# Optional Neo4j for teams that want a managed graph store instead of NetworkX.
+#
+#   docker compose up -d         # start
+#   docker compose down          # stop
+#   docker compose down -v       # stop and wipe data
+#
+# Browser UI:  http://localhost:7474   (login: neo4j / password)
+# Bolt URI:    bolt://localhost:7687
+#
+# APOC is enabled — useful for bulk imports and graph algorithms.
+# This is a convenience, not a requirement. NetworkX, Kuzu, DuckDB-PGQ,
+# or a single Python dict are all fine choices for a weekend project.
+
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: taxxa-neo4j
+    ports:
+      - "7474:7474"   # HTTP / browser UI
+      - "7687:7687"   # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/password
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_apoc_export_file_enabled: "true"
+      NEO4J_apoc_import_file_enabled: "true"
+      NEO4J_dbms_security_procedures_unrestricted: "apoc.*"
+      NEO4J_server_memory_heap_initial__size: "512m"
+      NEO4J_server_memory_heap_max__size: "2G"
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - ./data:/import:ro   # mounts data/ read-only into the container for LOAD CSV
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  neo4j_data:
+  neo4j_logs:

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxxa Assistant - local demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">&#x2731;</span>
+      <span class="brand-name">Taxxa</span>
+    </div>
+    <nav class="topbar-nav">
+      <a class="nav-link" tabindex="-1">Pricing</a>
+      <a class="nav-link" tabindex="-1">Features</a>
+      <a class="nav-link" tabindex="-1">Blog</a>
+      <a class="nav-link" href="/learn">How it learns</a>
+      <a class="nav-link" href="/roadmap">Next steps</a>
+      <a class="nav-link nav-link-active" href="/admin">Model details</a>
+      <span class="nav-btn nav-btn-ghost" tabindex="-1">Login to app</span>
+      <span class="nav-btn nav-btn-primary" tabindex="-1">Register</span>
+      <span class="nav-lang" tabindex="-1">EN</span>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="hero">
+      <span class="hero-pill">Local demo &middot; section_v1</span>
+      <h1 class="hero-title">AI accounting<br>workspace for<br>your team</h1>
+      <p class="hero-sub">
+        Fast answers with citations from Finnish tax law and Verohallinto
+        guidance. Each answer comes with a
+        <span class="hero-accent">completeness score</span> - so you can
+        tell at a glance whether it's worth a closer look at the cited
+        sources.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" id="stat-coverage">39%</span>
+          <span class="stat-label">marked &ldquo;looks complete&rdquo;</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="stat-precision">56%</span>
+          <span class="stat-label">of those held up on review</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="stat-catch">74%</span>
+          <span class="stat-label">of incomplete answers flagged</span>
+        </div>
+      </div>
+    </aside>
+
+    <section class="chat-pane">
+      <div class="chat-stream" id="chat-stream">
+        <!-- empty-state seed message -->
+        <article class="msg assistant intro">
+          <header class="msg-head">
+            <span class="msg-icon" aria-hidden="true">&#x2731;</span>
+            <span class="msg-author">Taxxa Assistant</span>
+          </header>
+          <div class="msg-body">
+            Ask anything about Finnish tax law or Verohallinto guidance.
+            I'll draft an answer from the indexed corpus, cite the
+            sources, and show a completeness score so you know how
+            confident the model is.
+            <div class="msg-examples">
+              <button class="example-q" data-q="What is the capital income tax rate (pääomatulovero) applicable to the portion of capital income that exceeds 30,000 euros in a tax year?">capital income tax rate above 30 000 &euro;</button>
+              <button class="example-q" data-q="What withholding tax rate (lähdevero-%) applies to a foreign specialist who has been officially granted key personnel (avainhenkilö) status under the avainhenkilölaki 1551/1995?">lähdevero for key personnel</button>
+              <button class="example-q" data-q="What is the gift tax (lahjavero) threshold below which a recipient owes no gift tax, and how are gifts from the same donor within three years aggregated?">lahjavero threshold and 3-year aggregation</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <form class="composer" id="composer">
+        <textarea
+          id="question-input"
+          class="composer-input"
+          rows="2"
+          placeholder="Ask Taxxa about Finnish tax law..."
+          autocomplete="off"
+        ></textarea>
+        <button id="send-btn" type="submit" class="composer-send">
+          Ask &rarr;
+        </button>
+      </form>
+      <div class="composer-meta">
+        <div class="method-picker">
+          <label for="method-select" class="method-picker-label">Retrieval</label>
+          <select id="method-select" class="method-picker-select" aria-label="Retrieval method">
+            <option value="">loading...</option>
+          </select>
+          <span id="method-blurb" class="method-picker-blurb"></span>
+        </div>
+        <div class="composer-hint">
+          Enter to send &middot; Shift+Enter for newline &middot;
+          <a href="/admin">model details</a> &middot;
+          <a href="/roadmap">next steps &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

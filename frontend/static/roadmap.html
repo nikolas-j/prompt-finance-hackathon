@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxxa - Next steps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">&#x2731;</span>
+      <span class="brand-name">Taxxa</span>
+    </div>
+    <nav class="topbar-nav">
+      <a class="nav-link" href="/">Chat</a>
+      <a class="nav-link" href="/admin">Model details</a>
+      <a class="nav-link nav-link-active" href="/roadmap">Next steps</a>
+      <span class="nav-btn nav-btn-ghost" tabindex="-1">Login to app</span>
+      <span class="nav-btn nav-btn-primary" tabindex="-1">Register</span>
+      <span class="nav-lang" tabindex="-1">EN</span>
+    </nav>
+  </header>
+
+  <main class="admin">
+    <section class="admin-head">
+      <div>
+        <span class="hero-pill">Presentation page</span>
+        <h1 class="admin-title">How to improve this system next</h1>
+        <p class="admin-sub">
+          This page summarizes why the confidence approach is useful today and
+          where it can deliver even more value with the next development steps.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">1) Fast experimentation across retrieval pipelines</h2>
+      </div>
+      <p class="card-sub">
+        The architecture is intentionally modular: we can swap chunking, retrieval,
+        and judge settings without rewriting the full app. That means we can run the
+        same question bank automatically on each variant and compare outcomes quickly.
+      </p>
+      <p class="card-sub">
+        Practical impact: we can test ideas rapidly, keep what improves judged
+        correctness, and discard what does not.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">2) Higher-value signals from advanced traversal</h2>
+      </div>
+      <p class="card-sub">
+        Graph and hybrid traversal already improve the retrieval pool. More advanced
+        traversal systems can provide richer confidence signals, such as multi-hop
+        consistency, cross-source agreement, path stability, and repeated statute
+        confirmation across independent retrieval paths.
+      </p>
+      <p class="card-sub">
+        Practical impact: better retrieval traces produce better confidence estimates.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">3) Scale test data beyond 83 questions</h2>
+      </div>
+      <p class="card-sub">
+        Current confidence models are trained with 5-fold cross-validation on 83
+        questions. This is a strong prototype, but sample size is still small for
+        robust calibration.
+      </p>
+      <p class="card-sub">
+        With a verified set of around 1,000 questions, we expect materially better
+        generalization, tighter confidence calibration, and more stable feature
+        importance across retraining runs.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">4) Why this works especially well in Finnish tax</h2>
+      </div>
+      <p class="card-sub">
+        Finnish tax guidance is a constrained domain: terminology, thresholds,
+        percentages, and legal references are structured and repeated. That makes
+        retrieval quality highly measurable and confidence signals highly informative.
+      </p>
+      <p class="card-sub">
+        In this type of domain, confidence prediction from retrieval behavior is more
+        reliable than in broad open-domain question answering.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">5) Use confidence inside iterative retrieval loops</h2>
+      </div>
+      <p class="card-sub">
+        Confidence should not only be displayed; it should control behavior. If the
+        first answer has low confidence, the system can re-search with alternative
+        retrieval strategies, run focused follow-up queries, or narrow the question
+        scope to reduce uncertainty.
+      </p>
+      <p class="card-sub">
+        This is directly compatible with GraphRAG and other multi-step agentic
+        retrieval systems: confidence acts as a gating signal for another retrieval
+        pass instead of returning a weak answer as final.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

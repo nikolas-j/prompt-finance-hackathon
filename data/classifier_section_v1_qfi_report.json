@@ -1,0 +1,1103 @@
+{
+  "method": "section_v1_qfi",
+  "n_samples": 83,
+  "n_pass": 27,
+  "n_fail": 56,
+  "baseline_accuracy": 0.6746987951807228,
+  "cv_n_splits": 5,
+  "feature_names": [
+    "top1_similarity",
+    "top1_gap",
+    "top1_dominance",
+    "std_similarity",
+    "sim_decay_slope",
+    "softmax_entropy_norm",
+    "top3_similarity_mass",
+    "sim_gini",
+    "chunk_cohesion",
+    "centroid_concentration",
+    "max_pairwise_distance",
+    "max_statute_share",
+    "statute_switch_rate",
+    "n_unique_files",
+    "frac_section_number_present",
+    "total_context_chars",
+    "question_token_count",
+    "n_numbers",
+    "n_conditionals",
+    "has_statute_ref",
+    "has_year",
+    "numeric_question",
+    "numeric_hit_coverage",
+    "numeric_overlap_ratio",
+    "statute_ref_alignment",
+    "confidence_x_focus",
+    "title_token_jaccard_top1",
+    "title_token_jaccard_topk",
+    "title_token_coverage_topk",
+    "body_content_overlap_top1",
+    "body_content_overlap_topk",
+    "rare_term_recall",
+    "near_dup_share",
+    "statute_diversity_norm",
+    "superseded_share",
+    "has_multipart_question",
+    "question_char_count",
+    "has_currency_amount",
+    "n_question_marks",
+    "graph_is_graph_mode",
+    "graph_seed_share_in_final",
+    "graph_neighbour_share_in_final",
+    "graph_mean_distance",
+    "graph_max_distance",
+    "graph_top1_is_neighbour",
+    "graph_top1_distance",
+    "graph_unique_seeds_used",
+    "graph_neighbour_sim_uplift",
+    "graph_neighbour_sim_share"
+  ],
+  "best_model": "decision_tree",
+  "models": [
+    {
+      "name": "decision_tree",
+      "grid_size": 24,
+      "best_params": {
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 8
+      },
+      "grid_best_balanced_accuracy": 0.5574242424242424,
+      "cv_mean_accuracy": 0.5301470588235294,
+      "cv_std_accuracy": 0.09882528009653789,
+      "cv_mean_balanced_accuracy": 0.5574242424242424,
+      "cv_std_balanced_accuracy": 0.09315951938166774,
+      "cv_mean_f1": 0.4452991452991453,
+      "cv_std_f1": 0.10676578782651074,
+      "cv_improvement_over_baseline": -0.14455173635719343,
+      "feature_importances": [
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.40044975355242673
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.2649392515633623
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.2076236809664445
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.12698731391776646
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 4,
+      "nonzero_features": [
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.40044975355242673
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.2649392515633623
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.2076236809664445
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.12698731391776646
+        }
+      ],
+      "tree_text": "|--- max_pairwise_distance <= 0.443\n|   |--- body_content_overlap_top1 <= 0.268\n|   |   |--- class: 0\n|   |--- body_content_overlap_top1 >  0.268\n|   |   |--- class: 0\n|--- max_pairwise_distance >  0.443\n|   |--- sim_gini <= 0.004\n|   |   |--- class: 0\n|   |--- sim_gini >  0.004\n|   |   |--- frac_section_number_present <= 0.958\n|   |   |   |--- class: 1\n|   |   |--- frac_section_number_present >  0.958\n|   |   |   |--- class: 1\n"
+    },
+    {
+      "name": "dummy_majority",
+      "grid_size": 1,
+      "best_params": {},
+      "grid_best_balanced_accuracy": null,
+      "cv_mean_accuracy": 0.675,
+      "cv_std_accuracy": 0.023780825924700336,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.000301204819277201,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    },
+    {
+      "name": "logreg_l1",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 0.1,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.5,
+      "cv_mean_accuracy": 0.675,
+      "cv_std_accuracy": 0.023780825924700336,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.000301204819277201,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    },
+    {
+      "name": "logreg_l2",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 0.1,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.4922727272727273,
+      "cv_mean_accuracy": 0.6139705882352942,
+      "cv_std_accuracy": 0.12233314319462013,
+      "cv_mean_balanced_accuracy": 0.4922727272727273,
+      "cv_std_balanced_accuracy": 0.11604161566290158,
+      "cv_mean_f1": 0.2015873015873016,
+      "cv_std_f1": 0.18858853003529072,
+      "cv_improvement_over_baseline": -0.06072820694542869,
+      "feature_importances": [
+        {
+          "name": "has_year",
+          "importance": 0.29331710256754523
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.2230199034780514
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.219385718015932
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.2053827031363725
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.18066715164755598
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.16551449392494627
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.15857970100630095
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.154425131491641
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.13445707188401027
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.13303759521509567
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.13037788641007436
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.12765003737302633
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.12646097162532047
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.1194942145934952
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.1194942145934952
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.11057272001148868
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.08725669352548461
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.08527707073784038
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0817661587046061
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.08017573410605588
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.07932548200885528
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0782824166514319
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.06426421613941165
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.05949145442497055
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.059491453023605353
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.043743541441071156
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.04340644053600516
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.03590587220318023
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.03118267131652951
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.030581995839549587
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.02426391609025599
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.019531778657693493
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.01793775872023045
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.013345380949146664
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.01220537692012606
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.011051495666768284
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.010702022149101948
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0053503166133475125
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0011218258169405834
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 39,
+      "nonzero_features": [
+        {
+          "name": "has_year",
+          "importance": 0.29331710256754523
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.2230199034780514
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.219385718015932
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.2053827031363725
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.18066715164755598
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.16551449392494627
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.15857970100630095
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.154425131491641
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.13445707188401027
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.13303759521509567
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.13037788641007436
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.12765003737302633
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.12646097162532047
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.1194942145934952
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.1194942145934952
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.11057272001148868
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.08725669352548461
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.08527707073784038
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0817661587046061
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.08017573410605588
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.07932548200885528
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0782824166514319
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.06426421613941165
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.05949145442497055
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.059491453023605353
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.043743541441071156
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.04340644053600516
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.03590587220318023
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.03118267131652951
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.030581995839549587
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.02426391609025599
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.019531778657693493
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.01793775872023045
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.013345380949146664
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.01220537692012606
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.011051495666768284
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.010702022149101948
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0053503166133475125
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0011218258169405834
+        }
+      ],
+      "tree_text": null
+    }
+  ]
+}

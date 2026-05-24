@@ -1,0 +1,595 @@
+[
+  {
+    "id": "Q1",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 24,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:30.000"
+    ],
+    "question": "What is the capital income tax rate (pääomatulovero) applicable to the portion of capital income tha"
+  },
+  {
+    "id": "Q4",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 38,
+    "gold_files_in_retrieved": 3,
+    "rare_anchors": [
+      "num:1551"
+    ],
+    "question": "What withholding tax rate (lähdevero-%) applies to a foreign specialist who has been officially gran"
+  },
+  {
+    "id": "Q7",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 5,
+    "gold_files_in_retrieved": 3,
+    "rare_anchors": [
+      "num:60.0",
+      "pct:60.0"
+    ],
+    "question": "What is the maximum daily withholding tax percentage (ennakonpidätys) that can be applied to a taxpa"
+  },
+  {
+    "id": "Q8",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:15.150",
+      "pct:2.5"
+    ],
+    "question": "What is the Finnish broadcasting tax (yleisradiovero) rate in 2026, what is the annual income floor "
+  },
+  {
+    "id": "Q9",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 33,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:1957",
+      "num:1958",
+      "num:1961",
+      "num:1962",
+      "pct:7.30"
+    ],
+    "question": "What is the statutory pension insurance contribution rate (TyEL-maksu) deducted from an employee's w"
+  },
+  {
+    "id": "Q12",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 36,
+    "gold_files_in_retrieved": 1,
+    "rare_anchors": [
+      "num:13.5"
+    ],
+    "question": "A company purchases electronic meal vouchers through a third-party voucher platform (app) for its em"
+  },
+  {
+    "id": "Q14",
+    "verdict": "RANKING_ISSUE/strong",
+    "gold_files": 7,
+    "gold_files_in_retrieved": 2,
+    "rare_anchors": [
+      "num:100.000",
+      "num:5.000",
+      "num:500.000",
+      "num:7.500"
+    ],
+    "question": "Five colleagues agree informally to pool their money to buy lottery tickets. Only one colleague (Mat"
+  },
+  {
+    "id": "Q15",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 29,
+    "gold_files_in_retrieved": 2,
+    "rare_anchors": [
+      "num:14.00",
+      "pct:22"
+    ],
+    "question": "An employee works in a hospital canteen. The employer's direct cost per meal is 5.00 euros. Using th"
+  },
+  {
+    "id": "Q16",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "An employee has a company-provided benefit car (käyttöetuauto) available for private use. They also "
+  },
+  {
+    "id": "Q17",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 16,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:12.000",
+      "num:12.920",
+      "num:21.920",
+      "num:25.5",
+      "num:30.000",
+      "num:38.000"
+    ],
+    "question": "A Finnish resident taxpayer receives 80,000 euros in dividends from a listed Finnish company in a si"
+  },
+  {
+    "id": "Q20",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 9,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:100.000",
+      "num:200.000",
+      "pct:10"
+    ],
+    "question": "An Austrian company owns 28% of a Finnish company and receives a dividend of 200,000 euros. A separa"
+  },
+  {
+    "id": "Q21",
+    "verdict": "RANKING_ISSUE/strong",
+    "gold_files": 33,
+    "gold_files_in_retrieved": 2,
+    "rare_anchors": [
+      "num:1957",
+      "num:1958",
+      "num:1961",
+      "num:1962",
+      "num:2027",
+      "num:71.72"
+    ],
+    "question": "A Finnish employee was born in 1958. They are 67 years old and still in active employment. Are they "
+  },
+  {
+    "id": "Q23",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:3005",
+      "num:5.280",
+      "num:686.40"
+    ],
+    "question": "An employee commutes by bicycle 12 km each way to work, 220 days per year. Their neighbour commutes "
+  },
+  {
+    "id": "Q24",
+    "verdict": "RANKING_ISSUE/strong",
+    "gold_files": 5,
+    "gold_files_in_retrieved": 2,
+    "rare_anchors": [
+      "num:1200",
+      "num:18.0",
+      "num:3430",
+      "num:35000",
+      "num:45000",
+      "num:4640"
+    ],
+    "question": "A 66-year-old taxpayer has three dependent children aged 8, 12, and 20. Their earned income is 45,00"
+  },
+  {
+    "id": "Q26",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 136,
+    "gold_files_in_retrieved": 3,
+    "rare_anchors": [
+      "num:200.000",
+      "num:7.500",
+      "sec:14a",
+      "sec:85"
+    ],
+    "question": "A Finnish lottery winner intends to transfer 200,000 euros of their winnings to their 10-year-old gr"
+  },
+  {
+    "id": "Q35",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 5,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:10.000",
+      "num:12.500",
+      "num:4.000",
+      "num:8.500",
+      "sec:117",
+      "sec:149a"
+    ],
+    "question": "Pekka runs sole proprietorship (toiminimi): VAT-taxable IT consulting (8,500 euros/yr) + VAT-exempt "
+  },
+  {
+    "id": "Q38",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 218,
+    "gold_files_in_retrieved": 3,
+    "rare_anchors": [
+      "num:600.000",
+      "pct:10"
+    ],
+    "question": "Finnish parent (Oy Pohjoinen Ab) 100% owns Austrian subsidiary (Österreich GmbH). 2025 dividend of 6"
+  },
+  {
+    "id": "Q40",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 2,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:25.000",
+      "num:60.000"
+    ],
+    "question": "Tommi platform primary account holder. Over six months in 2025, brother Juhani (no tax card) regular"
+  },
+  {
+    "id": "Q41",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 211,
+    "gold_files_in_retrieved": 1,
+    "rare_anchors": [
+      "num:52.100",
+      "num:52.100.01",
+      "num:90.000",
+      "sec:56"
+    ],
+    "question": "A Finnish employer obtained key personnel (avainhenkilö) tax status for a foreign specialist (Dr. Ch"
+  },
+  {
+    "id": "Q42",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 14,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:150.000",
+      "num:3630",
+      "num:67.500"
+    ],
+    "question": "Helena and Markku cohabited 15 years without marrying. Markku dies Feb 2026. They jointly owned an a"
+  },
+  {
+    "id": "Q43",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 17,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:21.11"
+    ],
+    "question": "A Finnish IT company employs Nguyen Van An (Vietnamese national) under secondment to work in Vietnam"
+  },
+  {
+    "id": "Q45",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 2,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:3.000.000",
+      "num:5.000",
+      "num:500.000",
+      "num:7.500",
+      "sec:85"
+    ],
+    "question": "A syndicate of six Finnish friends has been buying lottery tickets together since 2022. Only Sirkka "
+  },
+  {
+    "id": "Q47",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "Finnish employer applied wrong collective agreement to pharmacy worker (Apteekki Oy) for three years"
+  },
+  {
+    "id": "Q49",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:109.20",
+      "num:12.850",
+      "num:15.150",
+      "num:17.255",
+      "num:246.40",
+      "num:28.000"
+    ],
+    "question": "Finnish taxpayer Ari self-employed (YEL-insured). 2026 earned income from self-employment 28,000 eur"
+  },
+  {
+    "id": "Q50",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 11,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:13.5",
+      "num:35.000",
+      "sec:44",
+      "sec:56"
+    ],
+    "question": "Eeva worked as tax consultant at large Finnish accounting firm 2019-2024. Advised clients to use 24%"
+  },
+  {
+    "id": "N2",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 53,
+    "gold_files_in_retrieved": 3,
+    "rare_anchors": [
+      "num:140.000",
+      "num:180.000",
+      "num:25.5"
+    ],
+    "question": "Koivunen Retail Oy sells groceries and household cleaning products. In October 2025 total sales are "
+  },
+  {
+    "id": "N3",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 51,
+    "gold_files_in_retrieved": 4,
+    "rare_anchors": [
+      "num:25.5"
+    ],
+    "question": "Saarinen Construction Oy receives an invoice from a subcontractor for construction services of 85,00"
+  },
+  {
+    "id": "N4",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 24,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:100.000"
+    ],
+    "question": "HelTech Solutions Oy has annual turnover of 1.4 million euros. In what period must it file its VAT r"
+  },
+  {
+    "id": "N8",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish holding company receives dividends from its wholly owned subsidiaries and charges manageme"
+  },
+  {
+    "id": "N12",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 4,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:100.000",
+      "num:500.000",
+      "num:520.000"
+    ],
+    "question": "HelTech Solutions Oy spent 520,000 euros on qualifying research and development activities in 2025. "
+  },
+  {
+    "id": "N13",
+    "verdict": "RECALL_MISS/strong",
+    "gold_files": 3,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:10.020",
+      "num:3.000",
+      "num:30.000",
+      "num:33.000",
+      "num:52.000",
+      "num:85.000"
+    ],
+    "question": "A Finnish individual sells shares in a listed Finnish company for 85,000 euros. The shares were purc"
+  },
+  {
+    "id": "N15",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish employer pays salaries on the 25th of each month. By what deadline must the employer repor"
+  },
+  {
+    "id": "N17",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 24,
+    "gold_files_in_retrieved": 1,
+    "rare_anchors": [
+      "num:30.000"
+    ],
+    "question": "A Finnish individual receives general housing allowance (yleinen asumistuki) and also earns rental i"
+  },
+  {
+    "id": "N22",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish employer must pay statutory sickness benefit compensation to an employee on long-term sick"
+  },
+  {
+    "id": "N23",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "Saarinen Construction Oy acquires a competitor company in a business acquisition. The target company"
+  },
+  {
+    "id": "N28",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:2.369.000",
+      "num:32.4"
+    ],
+    "question": "A Finnish company has 850 employees with an aggregate annual payroll of 32.4 million euros. Calculat"
+  },
+  {
+    "id": "N29",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 12,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:350.000",
+      "num:420.000",
+      "num:70.000"
+    ],
+    "question": "Saarinen Construction Oy acquires a subcontractor for 350,000 euros. The net assets of the acquired "
+  },
+  {
+    "id": "N31",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "Under Finnish FAS (KPL 5:6), what does the lower of cost and net realisable value rule mean for inve"
+  },
+  {
+    "id": "N32",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 1,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:26.000",
+      "num:260.000",
+      "num:420.000",
+      "num:680.000"
+    ],
+    "question": "Saarinen Construction Oy acquired a subcontractor company for 680,000 euros. The net assets of the a"
+  },
+  {
+    "id": "N34",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 14,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:150.000"
+    ],
+    "question": "HelTech Solutions Oy capitalised 150,000 euros of software development costs during 2025. Under KPL "
+  },
+  {
+    "id": "N35",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:18.500",
+      "num:285.000",
+      "num:303.500"
+    ],
+    "question": "Koivunen Retail Oy holds an investment fund portfolio at cost of 285,000 euros. At 31 December 2025 "
+  },
+  {
+    "id": "N36",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish group prepares consolidated accounts for the first time in 2025. The parent Oy Pohjoinen A"
+  },
+  {
+    "id": "N37",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 17,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:200.000"
+    ],
+    "question": "A UAE company receives interest payments of 200,000 euros per year from its Finnish subsidiary. The "
+  },
+  {
+    "id": "N38",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "Under the Finnish Tax Assessment Procedure Act and the Act on Self-Assessed Taxes, what are the reas"
+  },
+  {
+    "id": "N39",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish company licenses its software IP to a Swedish subsidiary for an annual royalty of 180,000 "
+  },
+  {
+    "id": "N43",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 13,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:500.000"
+    ],
+    "question": "Finland introduced an enhanced R&D tax deduction in 2023 following a government proposal. What was t"
+  },
+  {
+    "id": "N44",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 51,
+    "gold_files_in_retrieved": 2,
+    "rare_anchors": [
+      "num:25.5"
+    ],
+    "question": "Finland raised the standard VAT rate from 24% to 25.5% effective 1 September 2024. What transitional"
+  },
+  {
+    "id": "N45",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "Koivunen Retail Oy acquires a competing retail business whose employees are covered by a different c"
+  },
+  {
+    "id": "N46",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A Finnish construction project site employs workers from two subcontractors, each bound by a differe"
+  },
+  {
+    "id": "N47",
+    "verdict": "NO_ANCHORS",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [],
+    "question": "A worker employed under the Finnish food industry collective agreement (elintarvikealan TES) has bee"
+  },
+  {
+    "id": "N49",
+    "verdict": "RANKING_ISSUE/weak-1anchor",
+    "gold_files": 10,
+    "gold_files_in_retrieved": 1,
+    "rare_anchors": [
+      "num:1701",
+      "num:1702",
+      "num:1703",
+      "num:2871",
+      "num:2872",
+      "num:2873"
+    ],
+    "question": "What account number ranges are commonly used for trade receivables (myyntisaamiset) and trade payabl"
+  },
+  {
+    "id": "N54",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "sec:52h"
+    ],
+    "question": "In Finnish case law, how have the courts interpreted the concept of genuine business reasons (liiket"
+  },
+  {
+    "id": "N57",
+    "verdict": "NO_GOLD_FOUND",
+    "gold_files": 0,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:42.000"
+    ],
+    "question": "Saarinen Construction Oy purchases a new diesel van for 42,000 euros excluding VAT to be used entire"
+  },
+  {
+    "id": "N60",
+    "verdict": "RECALL_MISS/weak-1anchor",
+    "gold_files": 2,
+    "gold_files_in_retrieved": 0,
+    "rare_anchors": [
+      "num:480.000",
+      "num:800.000"
+    ],
+    "question": "A Finnish parent company already consolidates a 60% owned subsidiary and in 2025 acquires the remain"
+  }
+]

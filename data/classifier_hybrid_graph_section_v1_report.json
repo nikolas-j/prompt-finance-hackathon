@@ -1,0 +1,1429 @@
+{
+  "method": "hybrid_graph_section_v1",
+  "n_samples": 83,
+  "n_pass": 24,
+  "n_fail": 59,
+  "baseline_accuracy": 0.7108433734939759,
+  "cv_n_splits": 5,
+  "feature_names": [
+    "top1_similarity",
+    "top1_gap",
+    "top1_dominance",
+    "std_similarity",
+    "sim_decay_slope",
+    "softmax_entropy_norm",
+    "top3_similarity_mass",
+    "sim_gini",
+    "chunk_cohesion",
+    "centroid_concentration",
+    "max_pairwise_distance",
+    "max_statute_share",
+    "statute_switch_rate",
+    "n_unique_files",
+    "frac_section_number_present",
+    "total_context_chars",
+    "question_token_count",
+    "n_numbers",
+    "n_conditionals",
+    "has_statute_ref",
+    "has_year",
+    "numeric_question",
+    "numeric_hit_coverage",
+    "numeric_overlap_ratio",
+    "statute_ref_alignment",
+    "confidence_x_focus",
+    "title_token_jaccard_top1",
+    "title_token_jaccard_topk",
+    "title_token_coverage_topk",
+    "body_content_overlap_top1",
+    "body_content_overlap_topk",
+    "rare_term_recall",
+    "near_dup_share",
+    "statute_diversity_norm",
+    "superseded_share",
+    "has_multipart_question",
+    "question_char_count",
+    "has_currency_amount",
+    "n_question_marks",
+    "graph_is_graph_mode",
+    "graph_seed_share_in_final",
+    "graph_neighbour_share_in_final",
+    "graph_mean_distance",
+    "graph_max_distance",
+    "graph_top1_is_neighbour",
+    "graph_top1_distance",
+    "graph_unique_seeds_used",
+    "graph_neighbour_sim_uplift",
+    "graph_neighbour_sim_share",
+    "bm25_top1_score",
+    "bm25_score_gap",
+    "bm25_score_mean_topk",
+    "rrf_top1_score",
+    "rrf_top1_gap",
+    "frac_both_in_topk",
+    "frac_bm25_only_in_topk",
+    "frac_dense_only_in_topk",
+    "top1_in_dense_pool",
+    "top1_in_bm25_pool",
+    "top1_both_retrievers",
+    "bm25_rank_mean_topk",
+    "dense_rank_mean_topk",
+    "query_num_in_top1_chunk"
+  ],
+  "best_model": "decision_tree",
+  "models": [
+    {
+      "name": "decision_tree",
+      "grid_size": 24,
+      "best_params": {
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "max_depth": 4,
+        "min_samples_leaf": 4
+      },
+      "grid_best_balanced_accuracy": 0.5077272727272728,
+      "cv_mean_accuracy": 0.5647058823529412,
+      "cv_std_accuracy": 0.06939088669061194,
+      "cv_mean_balanced_accuracy": 0.5077272727272728,
+      "cv_std_balanced_accuracy": 0.1172451224264036,
+      "cv_mean_f1": 0.28740148740148735,
+      "cv_std_f1": 0.20444601057995895,
+      "cv_improvement_over_baseline": -0.1461374911410347,
+      "feature_importances": [
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.4628196438992403
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.21847823467909985
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.15192904816779573
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.11821352885921363
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.04855954439465053
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 5,
+      "nonzero_features": [
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.4628196438992403
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.21847823467909985
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.15192904816779573
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.11821352885921363
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.04855954439465053
+        }
+      ],
+      "tree_text": "|--- frac_bm25_only_in_topk <= 0.375\n|   |--- confidence_x_focus <= 0.222\n|   |   |--- top1_similarity <= 0.545\n|   |   |   |--- confidence_x_focus <= 0.120\n|   |   |   |   |--- class: 0\n|   |   |   |--- confidence_x_focus >  0.120\n|   |   |   |   |--- class: 1\n|   |   |--- top1_similarity >  0.545\n|   |   |   |--- frac_section_number_present <= 0.750\n|   |   |   |   |--- class: 1\n|   |   |   |--- frac_section_number_present >  0.750\n|   |   |   |   |--- class: 0\n|   |--- confidence_x_focus >  0.222\n|   |   |--- rare_term_recall <= 0.152\n|   |   |   |--- class: 0\n|   |   |--- rare_term_recall >  0.152\n|   |   |   |--- class: 0\n|--- frac_bm25_only_in_topk >  0.375\n|   |--- class: 0\n"
+    },
+    {
+      "name": "dummy_majority",
+      "grid_size": 1,
+      "best_params": {},
+      "grid_best_balanced_accuracy": null,
+      "cv_mean_accuracy": 0.7110294117647059,
+      "cv_std_accuracy": 0.02074519997009688,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.00018603827073004897,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    },
+    {
+      "name": "logreg_l1",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 0.1,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.5,
+      "cv_mean_accuracy": 0.7110294117647059,
+      "cv_std_accuracy": 0.02074519997009688,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.00018603827073004897,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.0
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.0
+        },
+        {
+          "name": "near_dup_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.0
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.0
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.0
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.0
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.0
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.0
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.0
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    },
+    {
+      "name": "logreg_l2",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 0.1,
+        "lr__class_weight": null
+      },
+      "grid_best_balanced_accuracy": 0.42757575757575755,
+      "cv_mean_accuracy": 0.5911764705882353,
+      "cv_std_accuracy": 0.03498640368638328,
+      "cv_mean_balanced_accuracy": 0.42757575757575755,
+      "cv_std_balanced_accuracy": 0.03457932948378566,
+      "cv_mean_f1": 0.04444444444444444,
+      "cv_std_f1": 0.08888888888888888,
+      "cv_improvement_over_baseline": -0.11966690290574056,
+      "feature_importances": [
+        {
+          "name": "near_dup_share",
+          "importance": 0.270473560855768
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.2349767572045548
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.22536917414278956
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.21476095958054983
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.20398939927978707
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.19872875623737513
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.1942724525127447
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.18272780901841335
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.18065712575627982
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.1757787766013813
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.16847687979338605
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.16847687979338605
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.16398037651475816
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.15823712277692792
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.13684699099271377
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.13603704145225134
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.13499256012953986
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.13080956798596713
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.130311651880969
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.13031163264999523
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.12761731449074434
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.12639854966794728
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.12639854963202782
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.12573578262550317
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.11884051554419328
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.11559944821893325
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.10652942334208071
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.10234312223037793
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.09770429439865581
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.09727956529254518
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.09609464351692808
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.09501336569527202
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0944077328590173
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.09206202318831677
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.08915460330544314
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.08634132787968037
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.07239469815688299
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0699654180733513
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0642699440767243
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.06304016148437153
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.059790194876991824
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.05531995526135067
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.052650072006449194
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.05026659077250396
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.04511980323656999
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.044544016716339944
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.04182504303358928
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.029524211268508543
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.027267467263175454
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.02454513292448491
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.02396320239823777
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.018507794710899347
+        },
+        {
+          "name": "has_year",
+          "importance": 0.015957039706089055
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.014378135433719434
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.009538205948668953
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.009454505427566191
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.008930187311180355
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.00580184588997893
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.005801820648938201
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.003171129744855764
+        },
+        {
+          "name": "graph_is_graph_mode",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_is_neighbour",
+          "importance": 0.0
+        },
+        {
+          "name": "graph_top1_distance",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 60,
+      "nonzero_features": [
+        {
+          "name": "near_dup_share",
+          "importance": 0.270473560855768
+        },
+        {
+          "name": "query_num_in_top1_chunk",
+          "importance": 0.2349767572045548
+        },
+        {
+          "name": "dense_rank_mean_topk",
+          "importance": 0.22536917414278956
+        },
+        {
+          "name": "bm25_rank_mean_topk",
+          "importance": 0.21476095958054983
+        },
+        {
+          "name": "graph_unique_seeds_used",
+          "importance": 0.20398939927978707
+        },
+        {
+          "name": "has_currency_amount",
+          "importance": 0.19872875623737513
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.1942724525127447
+        },
+        {
+          "name": "bm25_top1_score",
+          "importance": 0.18272780901841335
+        },
+        {
+          "name": "body_content_overlap_top1",
+          "importance": 0.18065712575627982
+        },
+        {
+          "name": "frac_dense_only_in_topk",
+          "importance": 0.1757787766013813
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.16847687979338605
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.16847687979338605
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.16398037651475816
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.15823712277692792
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.13684699099271377
+        },
+        {
+          "name": "frac_bm25_only_in_topk",
+          "importance": 0.13603704145225134
+        },
+        {
+          "name": "rrf_top1_score",
+          "importance": 0.13499256012953986
+        },
+        {
+          "name": "rrf_top1_gap",
+          "importance": 0.13080956798596713
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.130311651880969
+        },
+        {
+          "name": "statute_diversity_norm",
+          "importance": 0.13031163264999523
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.12761731449074434
+        },
+        {
+          "name": "frac_both_in_topk",
+          "importance": 0.12639854966794728
+        },
+        {
+          "name": "top1_both_retrievers",
+          "importance": 0.12639854963202782
+        },
+        {
+          "name": "superseded_share",
+          "importance": 0.12573578262550317
+        },
+        {
+          "name": "graph_neighbour_sim_uplift",
+          "importance": 0.11884051554419328
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.11559944821893325
+        },
+        {
+          "name": "bm25_score_mean_topk",
+          "importance": 0.10652942334208071
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.10234312223037793
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.09770429439865581
+        },
+        {
+          "name": "body_content_overlap_topk",
+          "importance": 0.09727956529254518
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.09609464351692808
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.09501336569527202
+        },
+        {
+          "name": "bm25_score_gap",
+          "importance": 0.0944077328590173
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.09206202318831677
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.08915460330544314
+        },
+        {
+          "name": "title_token_coverage_topk",
+          "importance": 0.08634132787968037
+        },
+        {
+          "name": "rare_term_recall",
+          "importance": 0.07239469815688299
+        },
+        {
+          "name": "top1_in_dense_pool",
+          "importance": 0.0699654180733513
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0642699440767243
+        },
+        {
+          "name": "title_token_jaccard_top1",
+          "importance": 0.06304016148437153
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.059790194876991824
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.05531995526135067
+        },
+        {
+          "name": "n_question_marks",
+          "importance": 0.052650072006449194
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.05026659077250396
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.04511980323656999
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.044544016716339944
+        },
+        {
+          "name": "has_multipart_question",
+          "importance": 0.04182504303358928
+        },
+        {
+          "name": "title_token_jaccard_topk",
+          "importance": 0.029524211268508543
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.027267467263175454
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.02454513292448491
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.02396320239823777
+        },
+        {
+          "name": "graph_neighbour_sim_share",
+          "importance": 0.018507794710899347
+        },
+        {
+          "name": "has_year",
+          "importance": 0.015957039706089055
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.014378135433719434
+        },
+        {
+          "name": "top1_in_bm25_pool",
+          "importance": 0.009538205948668953
+        },
+        {
+          "name": "question_char_count",
+          "importance": 0.009454505427566191
+        },
+        {
+          "name": "graph_max_distance",
+          "importance": 0.008930187311180355
+        },
+        {
+          "name": "graph_neighbour_share_in_final",
+          "importance": 0.00580184588997893
+        },
+        {
+          "name": "graph_seed_share_in_final",
+          "importance": 0.005801820648938201
+        },
+        {
+          "name": "graph_mean_distance",
+          "importance": 0.003171129744855764
+        }
+      ],
+      "tree_text": null
+    }
+  ]
+}

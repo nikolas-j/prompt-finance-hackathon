@@ -1,0 +1,749 @@
+{
+  "method": "section_v1",
+  "n_samples": 83,
+  "n_pass": 29,
+  "n_fail": 54,
+  "baseline_accuracy": 0.6506024096385542,
+  "cv_n_splits": 5,
+  "feature_names": [
+    "top1_similarity",
+    "top1_gap",
+    "top1_dominance",
+    "std_similarity",
+    "sim_decay_slope",
+    "softmax_entropy_norm",
+    "top3_similarity_mass",
+    "sim_gini",
+    "chunk_cohesion",
+    "centroid_concentration",
+    "max_pairwise_distance",
+    "max_statute_share",
+    "statute_switch_rate",
+    "n_unique_files",
+    "frac_section_number_present",
+    "total_context_chars",
+    "question_token_count",
+    "n_numbers",
+    "n_conditionals",
+    "has_statute_ref",
+    "has_year",
+    "numeric_question",
+    "numeric_hit_coverage",
+    "numeric_overlap_ratio",
+    "statute_ref_alignment",
+    "confidence_x_focus"
+  ],
+  "best_model": "decision_tree",
+  "models": [
+    {
+      "name": "decision_tree",
+      "grid_size": 24,
+      "best_params": {
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 4
+      },
+      "grid_best_balanced_accuracy": 0.6727272727272726,
+      "cv_mean_accuracy": 0.6977941176470589,
+      "cv_std_accuracy": 0.2038555700136877,
+      "cv_mean_balanced_accuracy": 0.6727272727272726,
+      "cv_std_balanced_accuracy": 0.2395377397028809,
+      "cv_mean_f1": 0.5686313686313686,
+      "cv_std_f1": 0.32745930065160755,
+      "cv_improvement_over_baseline": 0.047191708008504696,
+      "feature_importances": [
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.29863803002930184
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.29641701932015985
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.21406391158968874
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.19088103906084952
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 4,
+      "nonzero_features": [
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.29863803002930184
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.29641701932015985
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.21406391158968874
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.19088103906084952
+        }
+      ],
+      "tree_text": "|--- top1_similarity <= 0.491\n|   |--- class: 0\n|--- top1_similarity >  0.491\n|   |--- confidence_x_focus <= 0.133\n|   |   |--- frac_section_number_present <= 0.542\n|   |   |   |--- class: 0\n|   |   |--- frac_section_number_present >  0.542\n|   |   |   |--- class: 1\n|   |--- confidence_x_focus >  0.133\n|   |   |--- top3_similarity_mass <= 0.256\n|   |   |   |--- class: 0\n|   |   |--- top3_similarity_mass >  0.256\n|   |   |   |--- class: 1\n"
+    },
+    {
+      "name": "logreg_l2",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 10.0,
+        "lr__class_weight": "balanced"
+      },
+      "grid_best_balanced_accuracy": 0.5587878787878788,
+      "cv_mean_accuracy": 0.5786764705882353,
+      "cv_std_accuracy": 0.03167744004196767,
+      "cv_mean_balanced_accuracy": 0.5587878787878788,
+      "cv_std_balanced_accuracy": 0.058457365186401204,
+      "cv_mean_f1": 0.43487623487623484,
+      "cv_std_f1": 0.12978271205383193,
+      "cv_improvement_over_baseline": -0.07192593905031885,
+      "feature_importances": [
+        {
+          "name": "top3_similarity_mass",
+          "importance": 3.6913059796054517
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 2.4021848968105077
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 2.325823842393926
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 2.2175652564881294
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.9428388391014224
+        },
+        {
+          "name": "sim_gini",
+          "importance": 1.8847475574682722
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 1.8824662182937608
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 1.4931034240111596
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 1.467209308232561
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 1.3641382108685283
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.8639915580925946
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.7146454579357914
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.5815728394730293
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.536042786651342
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.4911076366760254
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.2859557429443247
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.26588938186349914
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.2185917044130133
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.1934563722186306
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.1934563722186303
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.14500396797797518
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.12291674764381699
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.11417685428876465
+        },
+        {
+          "name": "has_year",
+          "importance": 0.11410330793529967
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.10273382521829087
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.006390239860779561
+        }
+      ],
+      "nonzero_feature_count": 26,
+      "nonzero_features": [
+        {
+          "name": "top3_similarity_mass",
+          "importance": 3.6913059796054517
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 2.4021848968105077
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 2.325823842393926
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 2.2175652564881294
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.9428388391014224
+        },
+        {
+          "name": "sim_gini",
+          "importance": 1.8847475574682722
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 1.8824662182937608
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 1.4931034240111596
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 1.467209308232561
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 1.3641382108685283
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.8639915580925946
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.7146454579357914
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.5815728394730293
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 0.536042786651342
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.4911076366760254
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.2859557429443247
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.26588938186349914
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.2185917044130133
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.1934563722186306
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.1934563722186303
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.14500396797797518
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.12291674764381699
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.11417685428876465
+        },
+        {
+          "name": "has_year",
+          "importance": 0.11410330793529967
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.10273382521829087
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.006390239860779561
+        }
+      ],
+      "tree_text": null
+    },
+    {
+      "name": "logreg_l1",
+      "grid_size": 6,
+      "best_params": {
+        "lr__C": 10.0,
+        "lr__class_weight": "balanced"
+      },
+      "grid_best_balanced_accuracy": 0.5178787878787878,
+      "cv_mean_accuracy": 0.5536764705882353,
+      "cv_std_accuracy": 0.03445698386429407,
+      "cv_mean_balanced_accuracy": 0.5178787878787878,
+      "cv_std_balanced_accuracy": 0.044889416211251386,
+      "cv_mean_f1": 0.37614607614607615,
+      "cv_std_f1": 0.09829916642374226,
+      "cv_improvement_over_baseline": -0.09692593905031888,
+      "feature_importances": [
+        {
+          "name": "top3_similarity_mass",
+          "importance": 8.84095805670239
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 8.02168994904896
+        },
+        {
+          "name": "sim_gini",
+          "importance": 7.66232600010904
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 7.508252194097632
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 2.2802167979421823
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 2.045038082686348
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 2.003060511040408
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 1.7873557179040176
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.6475896102913112
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 1.5089246884465224
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 1.1676940965263
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 1.0171447515848038
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.5194343660821162
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.4558335890453111
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.3507282454548647
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.33842563454077484
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.2506850218210838
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.24525371062330276
+        },
+        {
+          "name": "has_year",
+          "importance": 0.24244787417685662
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.16428353111617658
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.15784488406370173
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.011247123985867408
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 22,
+      "nonzero_features": [
+        {
+          "name": "top3_similarity_mass",
+          "importance": 8.84095805670239
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 8.02168994904896
+        },
+        {
+          "name": "sim_gini",
+          "importance": 7.66232600010904
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 7.508252194097632
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 2.2802167979421823
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 2.045038082686348
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 2.003060511040408
+        },
+        {
+          "name": "top1_similarity",
+          "importance": 1.7873557179040176
+        },
+        {
+          "name": "top1_gap",
+          "importance": 1.6475896102913112
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 1.5089246884465224
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 1.1676940965263
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 1.0171447515848038
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.5194343660821162
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.4558335890453111
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.3507282454548647
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.33842563454077484
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.2506850218210838
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.24525371062330276
+        },
+        {
+          "name": "has_year",
+          "importance": 0.24244787417685662
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.16428353111617658
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.15784488406370173
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.011247123985867408
+        }
+      ],
+      "tree_text": null
+    },
+    {
+      "name": "dummy_majority",
+      "grid_size": 1,
+      "best_params": {},
+      "grid_best_balanced_accuracy": null,
+      "cv_mean_accuracy": 0.6507352941176471,
+      "cv_std_accuracy": 0.02027065992954444,
+      "cv_mean_balanced_accuracy": 0.5,
+      "cv_std_balanced_accuracy": 0.0,
+      "cv_mean_f1": 0.0,
+      "cv_std_f1": 0.0,
+      "cv_improvement_over_baseline": 0.00013288447909287626,
+      "feature_importances": [
+        {
+          "name": "top1_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_gap",
+          "importance": 0.0
+        },
+        {
+          "name": "top1_dominance",
+          "importance": 0.0
+        },
+        {
+          "name": "std_similarity",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_decay_slope",
+          "importance": 0.0
+        },
+        {
+          "name": "softmax_entropy_norm",
+          "importance": 0.0
+        },
+        {
+          "name": "top3_similarity_mass",
+          "importance": 0.0
+        },
+        {
+          "name": "sim_gini",
+          "importance": 0.0
+        },
+        {
+          "name": "chunk_cohesion",
+          "importance": 0.0
+        },
+        {
+          "name": "centroid_concentration",
+          "importance": 0.0
+        },
+        {
+          "name": "max_pairwise_distance",
+          "importance": 0.0
+        },
+        {
+          "name": "max_statute_share",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_switch_rate",
+          "importance": 0.0
+        },
+        {
+          "name": "n_unique_files",
+          "importance": 0.0
+        },
+        {
+          "name": "frac_section_number_present",
+          "importance": 0.0
+        },
+        {
+          "name": "total_context_chars",
+          "importance": 0.0
+        },
+        {
+          "name": "question_token_count",
+          "importance": 0.0
+        },
+        {
+          "name": "n_numbers",
+          "importance": 0.0
+        },
+        {
+          "name": "n_conditionals",
+          "importance": 0.0
+        },
+        {
+          "name": "has_statute_ref",
+          "importance": 0.0
+        },
+        {
+          "name": "has_year",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_question",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_hit_coverage",
+          "importance": 0.0
+        },
+        {
+          "name": "numeric_overlap_ratio",
+          "importance": 0.0
+        },
+        {
+          "name": "statute_ref_alignment",
+          "importance": 0.0
+        },
+        {
+          "name": "confidence_x_focus",
+          "importance": 0.0
+        }
+      ],
+      "nonzero_feature_count": 0,
+      "nonzero_features": [],
+      "tree_text": null
+    }
+  ]
+}

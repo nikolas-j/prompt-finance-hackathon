@@ -1,0 +1,950 @@
+{
+  "promoted_files": [
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Asetus Espanjan kanssa sosiaaliturvasta tehdyssä sopimuksessa tarkoitetusta vakuutuslaitosten välisestä sairaanhoitoetuuksien kustannusten korvaamisesta.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Asunto-osakeyhtiöasetus.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Maa- ja metsätalousministeriön asetus vesiviljelyeläinten tunnistamisesta.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista sekä tutkit.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Valtioneuvoston asetus covid-19-epidemiasta sairaanhoitopiireille aiheutuvien kustannusten ja alijäämän korvaamiseksi myönnettävästä väliaikaisesta kompensaatiosta.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Valtioneuvoston asetus kotoutumisen edistämiseen liittyvien kunnan, hyvinvointialueen ja Ahvenanmaan maakunnan terveys- ja sairaanhoitoviranomaisen kustannusten korvaamisesta valti.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Valtioneuvoston asetus yleisradiotoiminnassa noudatettavasta taajuuksien käyttösuunnitelmasta.html",
+    "data\\raw\\finlex\\Asetus (säädöskokoelma)\\Valtiovarainministeriön asetus Yleisradio 100 vuotta -juhlarahasta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus Kreikan kanssa sosiaaliturvasta tehdyssä sopimuksessa tarkoitetusta vakuutuslaitosten välisestä sairaanhoitoetuuksien kustannusten korvaamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus Viron kanssa sosiaaliturvasta tehdyssä sopimuksessa tarkoitetusta sairaanhoitoetuuksien kustannusten korvaamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus Yleisradio Oy_n velvollisuudesta välittää viranomaistiedotuksia.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen 1 a§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen 1 ja 5§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen 1 ja 5§_n muuttamisesta_1.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen muuttamisesta_1.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen muuttamisesta_2.html",
+    "data\\raw\\finlex\\Asetus\\Asetus eräistä sairaanhoitolaitosten maksuista, korvauksista ja palkkioista annetun asetuksen muuttamisesta_3.html",
+    "data\\raw\\finlex\\Asetus\\Asetus merenkulkijoiden terveyden- ja sairaanhoitoa koskevan yleissopimuksen voimaansaattamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotarvikkeista tehtävien ilmoitusten käsittelystä perittävistä maksuista annetun asetuksen 2§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotarvikkeista tehtävien ilmoitusten käsittelystä perittävistä maksuista.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotoimen harjoittamisesta annetun asetuksen 2 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotoimen harjoittamisesta annetun asetuksen 2§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotoimen harjoittamisesta annetun asetuksen muuttamisesta.html",
+    "data\\raw\\finlex\\Asetus\\Asetus sairaanhoitotoimen harjoittamisesta annetun asetuksen muuttamisesta_1.html",
+    "data\\raw\\finlex\\Asetus\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista ja tutkitta.html",
+    "data\\raw\\finlex\\Asetus\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista sekä tutkit.html",
+    "data\\raw\\finlex\\Asetus\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista sekä tutkit_1.html",
+    "data\\raw\\finlex\\Asetus\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista sekä tutkit_2.html",
+    "data\\raw\\finlex\\Asetus\\Sosiaali- ja terveysministeriön asetus sairaanhoitopiirin eettisen toimikunnan ja ETENE_n lääketieteellisen tutkimuseettisen jaoston lausunnoista perittävistä maksuista sekä tutkit_3.html",
+    "data\\raw\\finlex\\Asetus\\Valtioneuvoston asetus kotoutumisen edistämiseen liittyvien kunnan, hyvinvointialueen ja Ahvenanmaan maakunnan terveys- ja sairaanhoitoviranomaisen kustannusten korvaamisesta valti.html",
+    "data\\raw\\finlex\\Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2008.html",
+    "data\\raw\\finlex\\Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2009.html",
+    "data\\raw\\finlex\\Asetus\\Valtioneuvoston asetus yleisradiotoiminnassa noudatettavasta taajuuksien käyttösuunnitelmasta.html",
+    "data\\raw\\finlex\\Asetus\\Valtiovarainministeriön asetus Yleisradio 100 vuotta -juhlarahasta.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki_1.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Erikoissairaanhoitolaki.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Käräjäoikeuslaki.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Laki Yleisradio Oy_stä.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Työehtosopimuslaki.html",
+    "data\\raw\\finlex\\Laki (säädöskokoelma)\\Työsopimuslaki.html",
+    "data\\raw\\finlex\\Laki\\Asunto-osakeyhtiölaki.html",
+    "data\\raw\\finlex\\Laki\\Laki  Yleisradio Oy_stä annetun lain 5 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki  aavalla merellä tapahtuvan yleisradiotoiminnan rankaisemisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain 5 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain 7 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_2.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_3.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_4.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_5.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä annetun lain muuttamisesta_6.html",
+    "data\\raw\\finlex\\Laki\\Laki Yleisradio Oy_stä.html",
+    "data\\raw\\finlex\\Laki\\Laki aavalla merellä tapahtuvan yleisradiotoiminnan rankaisemisesta annetun lain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki asunto-olojen kehittämisestä.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 1 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 10 a §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 10 §_n 5 momentin kumoamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 10 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 28 ja 29 §_n kumoamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 28 ja 29 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 3 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 3 §_n muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 3 §_n muuttamisesta_2.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 3 §_n muuttamisesta_3.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 37 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 4 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 44 a §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 47 a ja 47 b §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 47 a ja 52 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 47 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 5 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 5 §_n muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 53 a §_n kumoamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 56 a §_n väliaikaisesta muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 56 a §_n väliaikaisesta muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 57 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 59 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 59 §_n muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain 5§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_10.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_11.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_12.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_13.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_14.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_15.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_16.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_17.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_18.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_19.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_2.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_3.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_4.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_5.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_6.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_7.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_8.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain muuttamisesta_9.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain voimaanpanosta annetun lain 23 §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain voimaanpanosta annetun lain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki erikoissairaanhoitolain voimaanpanosta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitoalan kuntainliittojen uudelleenjärjestämisestä eräissä tapauksissa annetun lain 23§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotarvikelain 1§_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotarvikelain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotarvikelain muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotarvikelain väliaikaisesta muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain 1 ja 1 a §_n muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain 1 §_n väliaikaisesta muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain muuttamisesta.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain muuttamisesta_1.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain muuttamisesta_2.html",
+    "data\\raw\\finlex\\Laki\\Laki sairaanhoitotoimen harjoittamisesta annetun lain muuttamisesta_3.html",
+    "data\\raw\\finlex\\Laki\\Työehtosopimuslaki.html",
+    "data\\raw\\finlex\\Laki\\Työsopimuslaki.html"
+  ],
+  "from_failures_runs": [
+    {
+      "method": "section_v1",
+      "ts": "2026-05-24T05:35:39Z",
+      "matched": [
+        {
+          "qid": "Q1",
+          "anchors": [
+            "paaomatulovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q4",
+          "anchors": [
+            "lahdevero",
+            "avainhenkilo",
+            "avainhenkilolaki"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q7",
+          "anchors": [
+            "ennakonpidatys",
+            "verohallinnon",
+            "ennakonpidatysprosenttien",
+            "palkkatuloa",
+            "ennakonpidatysprosentti"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q8",
+          "anchors": [
+            "yleisradiovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q9",
+          "anchors": [
+            "tyel-maksu",
+            "elakevakuutusmaksu"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q12",
+          "anchors": [
+            "luovutusta"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q14",
+          "anchors": [
+            "verovapaa",
+            "veronalaista"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q15",
+          "anchors": [
+            "ravintoetu"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q16",
+          "anchors": [
+            "kayttoetuauto",
+            "asunto",
+            "matkat"
+          ],
+          "matched_files": [
+            "Laki\\Asunto-osakeyhtiölaki.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki.html",
+            "Asetus (säädöskokoelma)\\Asunto-osakeyhtiöasetus.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki_1.html",
+            "Laki\\Laki asunto-olojen kehittämisestä.html"
+          ]
+        },
+        {
+          "qid": "Q17",
+          "anchors": [
+            "verovapaa"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q20",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q21",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q23",
+          "anchors": [
+            "sahkopyora",
+            "matkakuluvahennys"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q24",
+          "anchors": [
+            "tyotulovahennys",
+            "alaikainen"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q26",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q35",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q38",
+          "anchors": [
+            "osterreich",
+            "osinkoverovapaus"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q40",
+          "anchors": [
+            "verokorttia",
+            "ruokalahetin",
+            "ennakonpidatys"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q41",
+          "anchors": [
+            "avainhenkilo",
+            "sairaanhoitomaksu",
+            "paivarahamaksu"
+          ],
+          "matched_files": [
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2008.html",
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2009.html"
+          ]
+        },
+        {
+          "qid": "Q42",
+          "anchors": [
+            "asunto",
+            "asuinkaytossa",
+            "kiinteisto",
+            "ikakerroin"
+          ],
+          "matched_files": [
+            "Laki\\Asunto-osakeyhtiölaki.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki.html",
+            "Asetus (säädöskokoelma)\\Asunto-osakeyhtiöasetus.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki_1.html",
+            "Laki\\Laki asunto-olojen kehittämisestä.html"
+          ]
+        },
+        {
+          "qid": "Q43",
+          "anchors": [
+            "ulkomaantyoskentelyn",
+            "yksiloityna"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q45",
+          "anchors": [
+            "verovapaa",
+            "verotettavan",
+            "lahjan"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q47",
+          "anchors": [
+            "tyoehtosopimus",
+            "tyosopimuslaki",
+            "tyontekijoiden",
+            "tyoehtosopimuslaki",
+            "karajaoikeus",
+            "tyotuomioistuin"
+          ],
+          "matched_files": [
+            "Laki\\Työehtosopimuslaki.html",
+            "Laki (säädöskokoelma)\\Työehtosopimuslaki.html",
+            "Laki\\Työsopimuslaki.html",
+            "Laki (säädöskokoelma)\\Työsopimuslaki.html",
+            "Laki (säädöskokoelma)\\Käräjäoikeuslaki.html"
+          ]
+        },
+        {
+          "qid": "Q49",
+          "anchors": [
+            "yel-insured",
+            "paivarahamaksu",
+            "sairaanhoitomaksu",
+            "yleisradiovero",
+            "palkka",
+            "yrittajatulo",
+            "yel-tyotulo"
+          ],
+          "matched_files": [
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2008.html",
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2009.html"
+          ]
+        },
+        {
+          "qid": "Q50",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N2",
+          "anchors": [
+            "return"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N3",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N4",
+          "anchors": [
+            "returns",
+            "return"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N8",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N12",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N13",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N15",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N17",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N22",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N23",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N28",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N29",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N31",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N32",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N34",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N35",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N36",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N37",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N38",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N39",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N43",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N44",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N45",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N46",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N47",
+          "anchors": [
+            "jalkisitovuus"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N49",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N54",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N57",
+          "anchors": [
+            "autovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N60",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        }
+      ]
+    },
+    {
+      "method": "section_v1",
+      "ts": "2026-05-24T05:37:19Z",
+      "matched": [
+        {
+          "qid": "Q1",
+          "anchors": [
+            "paaomatulovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q4",
+          "anchors": [
+            "lahdevero",
+            "avainhenkilo",
+            "avainhenkilolaki"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q7",
+          "anchors": [
+            "ennakonpidatys",
+            "verohallinnon",
+            "ennakonpidatysprosenttien",
+            "palkkatuloa",
+            "ennakonpidatysprosentti"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q8",
+          "anchors": [
+            "yleisradiovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q9",
+          "anchors": [
+            "tyel-maksu",
+            "elakevakuutusmaksu"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q12",
+          "anchors": [
+            "luovutusta"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q14",
+          "anchors": [
+            "verovapaa",
+            "veronalaista"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q15",
+          "anchors": [
+            "ravintoetu"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q16",
+          "anchors": [
+            "kayttoetuauto",
+            "asunto",
+            "matkat"
+          ],
+          "matched_files": [
+            "Laki\\Asunto-osakeyhtiölaki.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki.html",
+            "Asetus (säädöskokoelma)\\Asunto-osakeyhtiöasetus.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki_1.html",
+            "Laki\\Laki asunto-olojen kehittämisestä.html"
+          ]
+        },
+        {
+          "qid": "Q17",
+          "anchors": [
+            "verovapaa"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q20",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q21",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q23",
+          "anchors": [
+            "sahkopyora",
+            "matkakuluvahennys"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q24",
+          "anchors": [
+            "tyotulovahennys",
+            "alaikainen"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q26",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q35",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "Q38",
+          "anchors": [
+            "osterreich",
+            "osinkoverovapaus"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q40",
+          "anchors": [
+            "verokorttia",
+            "ruokalahetin",
+            "ennakonpidatys"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q41",
+          "anchors": [
+            "avainhenkilo",
+            "sairaanhoitomaksu",
+            "paivarahamaksu"
+          ],
+          "matched_files": [
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2008.html",
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2009.html"
+          ]
+        },
+        {
+          "qid": "Q42",
+          "anchors": [
+            "asunto",
+            "asuinkaytossa",
+            "kiinteisto",
+            "ikakerroin"
+          ],
+          "matched_files": [
+            "Laki\\Asunto-osakeyhtiölaki.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki.html",
+            "Asetus (säädöskokoelma)\\Asunto-osakeyhtiöasetus.html",
+            "Laki (säädöskokoelma)\\Asunto-osakeyhtiölaki_1.html",
+            "Laki\\Laki asunto-olojen kehittämisestä.html"
+          ]
+        },
+        {
+          "qid": "Q43",
+          "anchors": [
+            "ulkomaantyoskentelyn",
+            "yksiloityna"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q45",
+          "anchors": [
+            "verovapaa",
+            "verotettavan",
+            "lahjan"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "Q47",
+          "anchors": [
+            "tyoehtosopimus",
+            "tyosopimuslaki",
+            "tyontekijoiden",
+            "tyoehtosopimuslaki",
+            "karajaoikeus",
+            "tyotuomioistuin"
+          ],
+          "matched_files": [
+            "Laki\\Työehtosopimuslaki.html",
+            "Laki (säädöskokoelma)\\Työehtosopimuslaki.html",
+            "Laki\\Työsopimuslaki.html",
+            "Laki (säädöskokoelma)\\Työsopimuslaki.html",
+            "Laki (säädöskokoelma)\\Käräjäoikeuslaki.html"
+          ]
+        },
+        {
+          "qid": "Q49",
+          "anchors": [
+            "yel-insured",
+            "paivarahamaksu",
+            "sairaanhoitomaksu",
+            "yleisradiovero",
+            "palkka",
+            "yrittajatulo",
+            "yel-tyotulo"
+          ],
+          "matched_files": [
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2008.html",
+            "Asetus\\Valtioneuvoston asetus sairausvakuutuksen päivärahamaksun ja työnantajan sairausvakuutusmaksun maksuprosentista vuonna 2009.html"
+          ]
+        },
+        {
+          "qid": "Q50",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N2",
+          "anchors": [
+            "return"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N3",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N4",
+          "anchors": [
+            "returns",
+            "return"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N8",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N12",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N13",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N15",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N17",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N22",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N23",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N28",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N29",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N31",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N32",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N34",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N35",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N36",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N37",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N38",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N39",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N43",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N44",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N45",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N46",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N47",
+          "anchors": [
+            "jalkisitovuus"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N49",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N54",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        },
+        {
+          "qid": "N57",
+          "anchors": [
+            "autovero"
+          ],
+          "matched_files": []
+        },
+        {
+          "qid": "N60",
+          "anchors": [],
+          "matched_files": [],
+          "note": "too few anchors (<1)"
+        }
+      ]
+    }
+  ]
+}
